@@ -46,11 +46,32 @@ sayHello(data, "intj");
 sayHello("후르츠", "Entj");
 
 // reaturn (반환)
-function sum(num1, num2) {
-  // 두개의 값을 더한 값 반환
-  return num1 + num2;
-}
+//function sum(num1, num2) {
+// 두개의 값을 더한 값 반환
+// return num1 + num2;
+//}
+
+// 화살표 함수로 변환
+const sum = (num1, num2) => num1 + num2;
 
 // 함수 호출
-const result = sum(22, 40);
+const result = sum(22, 40); //62
 console.log("🚀 ~ con:", result);
+
+// 미션 : UpperString라는 화살표 함수 만들기
+// 기능 : 1. 파라미터로 받아온 문자열을 대문자로 변환
+//       2. 변환한 문자열을 반환
+// 실행
+"chuzrit".toUpperCase();
+
+// 함수정의
+// const UpperString = () => {}
+const upperString = (text) => {
+  // 기능 : 1. 파라미터로 받아온 문자열을 대문자로 변환
+  const upper = text.toUpperCase();
+  //       2. 변환한 문자열을 반환
+  return upper;
+};
+// 실행
+const rasultString = upperString("chuzrit");
+console.log("🚀 ~ rasultString:", rasultString);
