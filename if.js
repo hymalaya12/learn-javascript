@@ -68,3 +68,11 @@ const person = {
 
 console.log("0번째 데이터", person["name"]);
 console.log("company:", person.company); // 닷 표기법 권장👌
+
+const messageInfo = {
+  userTmage:
+    "https://c.files.bbci.co.uk/13295/production/_99458487_bts-2017-ama-backstage-portrait-billboard-1548.jpg",
+  username: "맛있는 쉐프",
+  message: "안녕하세요.",
+  role: "assistant",
+};
